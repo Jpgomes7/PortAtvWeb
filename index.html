@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de João Paulo Gomes da Silva." />
+    <title>Portfólio | João Paulo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    
+    
+    <style type="text/tailwindcss">
+      .projeto {
+        @apply rounded border border-stone-300 bg-white p-4;
+      }
+    </style>
+  </head>
+
+  <body class="bg-stone-50 text-stone-900">
+    <nav id="inicio" aria-label="Navegação principal" class="bg-black text-white">
+      <div class="mx-auto flex max-w-5xl flex-wrap justify-between gap-4 p-5">
+        <a href="#inicio" class="font-bold hover:underline focus-visible:underline">João Paulo</a>
+        <ul class="flex flex-wrap gap-4">
+          <li><a href="#inicio" class="hover:underline focus-visible:underline">Início</a></li>
+          <li><a href="#sobre" class="hover:underline focus-visible:underline">Sobre mim</a></li>
+          <li><a href="#habilidades" class="hover:underline focus-visible:underline">Habilidades</a></li>
+          <li><a href="#projetos" class="hover:underline focus-visible:underline">Projetos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-5xl p-5">
+      <header class="flex flex-col items-center gap-4 text-center">
+        <img
+          src="https://avatars.githubusercontent.com/u/130310183?s=400&u=eba79b8cca80c8c2ea47ff5869abd16c5af5cd88&v=4"
+          alt="Foto de João Paulo"
+          width="192"
+          height="192"
+          class="h-48 w-48 rounded-full object-cover"
+        />
+        <div>
+          <h1 class="text-3xl font-bold">João Paulo Gomes da Silva</h1>
+          <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+        </div>
+        <a href="JoaoPauloGCurriculo.pdf" download="Joao-Paulo-Curriculo.pdf" class="rounded bg-green-800 px-4 py-2 text-white">Baixar currículo</a>
+      </header>
+
+      <section id="sobre" class="my-8">
+        <h2 class="mb-3 text-2xl font-bold">Sobre mim</h2>
+        <p class="max-w-2xl leading-relaxed">
+          Sou de Pernambuco e estudo Análise e Desenvolvimento de Sistemas no IFPE.
+          Tenho interesse em dados e venho aprendendo na prática com projetos em Python.
+          Busco uma oportunidade de estágio na área.
+        </p>
+      </section>
+
+      <section id="habilidades" class="my-8">
+        <h2 class="mb-3 text-2xl font-bold">Habilidades</h2>
+        <ul class="list-disc pl-5">
+          <li>Python</li>
+          <li>Keras e TensorFlow, usados no projeto de previsão de admissão</li>
+          <li>Similaridade de cosseno, usada no recomendador de filmes</li>
+        </ul>
+      </section>
+
+      <section id="formacao" class="my-8">
+        <h2 class="mb-3 text-2xl font-bold">Onde estudo</h2>
+        <h3 class="font-bold">Instituto Federal de Pernambuco (IFPE)</h3>
+        <p>Análise e Desenvolvimento de Sistemas 3º período. Previsão de conclusão: 2028.</p>
+      </section>
+
+      <section id="projetos" class="my-8">
+        <h2 class="mb-3 text-2xl font-bold">Projetos</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <article class="projeto">
+            <h3 class="font-bold">Previsão de Admissão com Rede Neural</h3>
+            <p class="my-3">Modelo feito em Python com Keras e TensorFlow para estimar a chance de admissão em um programa de pós-graduação com base em dados acadêmicos.</p>
+            <a href="https://github.com/Jpgomes7/Previsao-Rede-Neural" target="_blank" class="text-green-800 underline">Ver no GitHub</a>
+          </article>
+          
+        </div>
+      </section>
+    </main>
+
+
+    <footer id="contato" class= "bg-black p-6 text-center text-white"> //tirei a nav de contato mas n sei ajeitar aqui sem dar conflito.
+      <p>feito por João Paulo</p>
+      <a href="https://github.com/Jpgomes7" target="_blank" class="underline">GitHub</a>
+    </footer>
+  </body>
+</html>
