@@ -7,16 +7,14 @@
     <title>Portfólio | João Paulo</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
-    
-    
     <style type="text/tailwindcss">
       .projeto {
-        @apply rounded border border-stone-300 bg-white p-4;
+        @apply rounded border border-stone-300 bg-white p-4 rounded-xl shadow-md transition-transform duration-300 hover:scale-105;
       }
     </style>
   </head>
 
-  <body class="bg-stone-50 text-stone-900">
+  <body class="bg-green-200 text-stone-900">
     <nav id="inicio" aria-label="Navegação principal" class="bg-black text-white">
       <div class="mx-auto flex max-w-5xl flex-wrap justify-between gap-4 p-5">
         <a href="#inicio" class="font-bold hover:underline focus-visible:underline">João Paulo</a>
@@ -31,40 +29,31 @@
 
     <main class="mx-auto max-w-5xl p-5">
       <header class="flex flex-col items-center gap-4 text-center">
-        <img
-          src="https://avatars.githubusercontent.com/u/130310183?s=400&u=eba79b8cca80c8c2ea47ff5869abd16c5af5cd88&v=4"
-          alt="Foto de João Paulo"
-          width="192"
-          height="192"
-          class="h-48 w-48 rounded-full object-cover"
-        />
+        <img src="https://avatars.githubusercontent.com/u/130310183?s=400&u=eba79b8cca80c8c2ea47ff5869abd16c5af5cd88&v=4" alt="Foto de João Paulo" width="192" height="192" class="h-48 w-48 rounded-full object-cover border-3 border-black"/>
         <div>
-          <h1 class="text-3xl font-bold">João Paulo Gomes da Silva</h1>
+          <h1 class="text-3xl font-bold">João Paulo Gomes</h1>
           <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
         </div>
         <a href="JoaoPauloGCurriculo.pdf" download="Joao-Paulo-Curriculo.pdf" class="rounded bg-green-800 px-4 py-2 text-white">Baixar currículo</a>
       </header>
 
-      <section id="sobre" class="my-8">
+      <section id="sobre" class="projeto my-8">
         <h2 class="mb-3 text-2xl font-bold">Sobre mim</h2>
-        <p class="max-w-2xl leading-relaxed">
-          Sou de Pernambuco e estudo Análise e Desenvolvimento de Sistemas no IFPE.
-          Tenho interesse em dados e venho aprendendo na prática com projetos em Python.
-          Busco uma oportunidade de estágio na área.
-        </p>
+        <p class="max-w-2xl leading-relaxed"> Sou estudante de Análise e Desenvolvimento de Sistemas no IFPE. Tenho interesse em dados e inteligência artificial e venho aprendendo na prática com projetos em Python.</p>
       </section>
 
-      <section id="habilidades" class="my-8">
+       <section id="habilidades" class=" projeto my-8">
         <h2 class="mb-3 text-2xl font-bold">Habilidades</h2>
-        <ul class="list-disc pl-5">
-          <li>Python</li>
-          <li>Keras e TensorFlow, usados no projeto de previsão de admissão</li>
-          <li>Similaridade de cosseno, usada no recomendador de filmes</li>
-        </ul>
-      </section>
+          <ul class="list-disc space-y-2 pl-5">
+             <li><strong>Linguagens:</strong> Python, R e SQL</li>
+             <li><strong>Análise de dados:</strong> Pandas e Matplotlib</li>
+             <li><strong>Machine learning:</strong> Scikit-learn, TensorFlow e Keras</li>
+             
+            </ul>
+        </section>
 
-      <section id="formacao" class="my-8">
-        <h2 class="mb-3 text-2xl font-bold">Onde estudo</h2>
+      <section id="formacao" class= "projeto my-8">
+        <h2 class="mb-3 text-2xl font-bold">Formação</h2>
         <h3 class="font-bold">Instituto Federal de Pernambuco (IFPE)</h3>
         <p>Análise e Desenvolvimento de Sistemas 3º período. Previsão de conclusão: 2028.</p>
       </section>
@@ -87,7 +76,7 @@
     </main>
 
 
-    <footer id="contato" class= "bg-black p-6 text-center text-white"> //tirei a nav de contato mas n sei ajeitar aqui sem dar conflito.
+    <footer id="contato" class= "bg-black p-6 text-center text-white">
       <p>feito por João Paulo</p>
       <a href="https://github.com/Jpgomes7" target="_blank" class="underline">GitHub</a>
     </footer>
